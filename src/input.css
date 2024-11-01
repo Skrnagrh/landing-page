@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Start */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+/* .header {
+  @apply fixed top-0 left-0 w-full flex items-center z-[9999] bg-white dark:bg-dark;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+} */
+.header {
+  @apply fixed bg-white dark:bg-dark bg-opacity-90 dark:bg-opacity-80 top-0 left-0 w-full flex items-center z-10;
+}
+
+.navbar-container {
+  @apply flex items-center justify-between relative;
+}
+
+.navbar-brand {
+  @apply font-bold text-2xl text-secondary block py-6 uppercase dark:text-white;
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-secondary dark:bg-white font-extrabold transition duration-300 ease-in-out;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white dark:bg-dark;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.nav-menu {
+  @apply inset-0 py-3 bg-white dark:bg-dark w-full h-screen lg:h-auto top-20 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:shadow-slate-300 lg:dark:bg-transparent z-[9999] pl-5;
+}
+
+.nav-link {
+  @apply hover:opacity-80 transition duration-300 ease-in-out mx-2 lg:mx-1 mt-1 text-secondary dark:text-white;
+}
+
+.nav-item {
+  @apply text-base py-2 mx-2 flex hover:text-yellow-400;
+}
+
+.language-switcher {
+  @apply hover:opacity-80 transition duration-300 ease-in-out mx-2 lg:mx-1 mt-1 text-secondary dark:text-white;
+}
+
+.language-button {
+  @apply mx-2 lg:mx-1 text-base py-2 hover:text-yellow-400;
+}
+
+.theme-toggle {
+  @apply relative transition duration-300 ease-in-out mt-1 text-secondary dark:text-white mx-4 lg:mx-1;
+}
+.theme-button {
+  @apply text-base py-2 flex items-center w-full hover:text-yellow-400;
+}
+
+.theme-dropdown {
+  @apply absolute right-0 mt-2 bg-white dark:bg-dark rounded-lg w-full z-10 py-2 lg:w-32;
+}
+
+.theme-option {
+  @apply flex items-center justify-between p-2 hover:text-yellow-400 cursor-pointer text-base py-2 mx-2;
+}
+
+.theme-option .i {
+  @apply text-sm text-secondary dark:text-white group-hover:text-yellow-400;
+}
+#nav-menu {
+  transition: max-height 0.3s ease-in-out;
+}
+
+#homeLink.active,
+#aboutLink.active,
+#experienceLink.active,
+#educationLink.active,
+#portofolioLink.active,
+#skillLink.active,
+#contactLink.active {
+  @apply text-yellow-400 font-bold;
+}
+/* Header End */

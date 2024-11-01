@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persistent Dropdown Header</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/css/swiper/swiper.css" />
+    <!-- <style>
+      /* Styling for dropdown */
+      .dropdown-content {
+        background-color: #2f4f4f; /* Darker background color */
+        color: white;
+        width: 200px;
+        position: absolute;
+        display: none;
+        z-index: 10;
+      }
+      .dropdown-content a {
+        color: white;
+        padding: 8px 16px;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #556b2f; /* Dark green hover color */
+      }
+
+      /* Show dropdown on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style> -->
+    <style>
+      .animate-scroll {
+        display: flex;
+        gap: 2rem;
+        width: calc(100% * 3); /* Adjust width to fit three sets of logos */
+        animation: scroll 10s linear infinite;
+      }
+      .scroll-container {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+      }
+
+      .animate-scroll {
+        display: inline-flex;
+        gap: 2rem;
+      }
+
+      .logo-img {
+        height: 2rem;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(
+            -33.33%
+          ); /* Move one full set to loop seamlessly */
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <!-- <header class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+      <div
+        class="container mx-auto px-4 py-2 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="your-logo.png" alt="Logo" class="w-10 h-10" />
+          <span class="text-2xl font-bold text-orange-500">MININGFIX</span>
+          <span class="text-lg font-semibold">INDONESIA</span>
+        </div>
+
+        <nav class="hidden md:flex space-x-8 text-gray-700">
+          <a href="#" class="text-yellow-500 font-semibold">Beranda</a>
+
+          <div class="relative dropdown">
+            <button class="focus:outline-none">Company</button>
+            <div class="dropdown-content shadow-md rounded mt-2">
+              <a href="#" class="block">About Me</a>
+              <a href="#" class="block">Visi Misi</a>
+              <a href="#" class="block">Tujuan</a>
+              <a href="#" class="block">Nilai Perusahaan</a>
+            </div>
+          </div>
+
+          <div class="relative dropdown">
+            <button class="focus:outline-none">Solution</button>
+            <div class="dropdown-content shadow-md rounded mt-2">
+              <a href="#" class="block">Solution1</a>
+              <a href="#" class="block">Solution2</a>
+              <a href="#" class="block">Solution3</a>
+            </div>
+          </div>
+
+          <a href="#" class="hover:text-gray-500">Projects</a>
+          <a href="#" class="hover:text-gray-500">Features</a>
+          <a href="#" class="hover:text-gray-500">Blog</a>
+          <a href="#" class="hover:text-gray-500">Contact</a>
+        </nav>
+
+        <div class="md:hidden flex items-center">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden bg-white shadow-lg overflow-y-auto"
+      >
+        <a href="#" class="block px-4 py-2 text-yellow-500 font-semibold"
+          >Beranda</a
+        >
+        <div class="relative">
+          <button
+            class="block w-full text-left px-4 py-2"
+            onclick="toggleDropdown('company-submenu-mobile')"
+          >
+            Company
+          </button>
+          <div
+            id="company-submenu-mobile"
+            class="hidden flex-col bg-white shadow-md p-2"
+          >
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Me</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Visi Misi</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tujuan</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+              >Nilai Perusahaan</a
+            >
+          </div>
+        </div>
+        <div class="relative">
+          <button
+            class="block w-full text-left px-4 py-2"
+            onclick="toggleDropdown('solution-submenu-mobile')"
+          >
+            Solution
+          </button>
+          <div
+            id="solution-submenu-mobile"
+            class="hidden flex-col bg-white shadow-md p-2"
+          >
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Solution1</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Solution2</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Solution3</a>
+          </div>
+        </div>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Features</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      </div>
+    </header>
+
+    <script>
+      // Toggle mobile menu
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+
+      // Function to toggle dropdowns
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
+    </script> -->
+
+    <section id="experience" class="pt-24 pb-16 bg-slate-100 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full">
+          <div
+            class="max-w-xl mx-auto text-center mb-4"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="300"
+            data-aos-delay="50"
+          >
+            <h2
+              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase"
+              data-key="experience"
+            >
+              Pengalaman
+            </h2>
+            <div
+              class="border-t-2 md:border-t-4 max-w-xl mx-auto text-center border-teal-500 w-20 pt-4"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper">
+        <div class="slide-content mx-24 mb-10">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="swiper-slide p-2 text-center">
+              <div
+                class="card shadow-md rounded-lg text-center pb-2 hover:shadow-xl"
+              >
+                <div class="relative">
+                  <img
+                    src="dist/img/service/1.jpg"
+                    alt="Land Mining"
+                    class="w-full h-52 object-cover rounded-lg rounded-b-none mb-4"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 p-2 text-xs"
+                  >
+                    Pictures by Pinterest
+                  </p>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                  <div
+                    class="bg-gray-200 p-3 rounded-full inline-flex items-center justify-center"
+                  >
+                    <span class="text-3xl">⛏️</span>
+                  </div>
+                  <h2 class="text-xl font-semibold">Eksplorasi Tambang</h2>
+                </div>
+                <p class="text-gray-600 mt-2 px-3">
+                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
+                  bertanggung jawab.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-2 text-center">
+              <div
+                class="card shadow-md rounded-lg text-center pb-2 hover:shadow-xl"
+              >
+                <div class="relative">
+                  <img
+                    src="dist/img/service/2.jpg"
+                    alt="Land Mining"
+                    class="w-full h-52 object-cover rounded-lg rounded-b-none mb-4"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 p-2 text-xs"
+                  >
+                    Pictures by Pinterest
+                  </p>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                  <div
+                    class="bg-gray-200 p-3 rounded-full inline-flex items-center justify-center"
+                  >
+                    <span class="text-3xl">👷‍♂️</span>
+                  </div>
+                  <h2 class="text-xl font-semibold">Pengelolaan Lapangan</h2>
+                </div>
+                <p class="text-gray-600 mt-2">
+                  Menyediakan tenaga kerja profesional di area pertambangan.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-2 text-center">
+              <div
+                class="card shadow-md rounded-lg text-center pb-2 hover:shadow-xl"
+              >
+                <div class="relative">
+                  <img
+                    src="dist/img/service/3.jpg"
+                    alt="Land Mining"
+                    class="w-full h-52 object-cover rounded-lg rounded-b-none mb-4"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 p-2 text-xs"
+                  >
+                    Pictures by Pinterest
+                  </p>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                  <div
+                    class="bg-gray-200 p-3 rounded-full inline-flex items-center justify-center"
+                  >
+                    <span class="text-3xl">⛏️</span>
+                  </div>
+                  <h2 class="text-xl font-semibold">Eksplorasi Tambang</h2>
+                </div>
+                <p class="text-gray-600 mt-2 px-3">
+                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
+                  bertanggung jawab.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-2 text-center">
+              <div
+                class="card shadow-md rounded-lg text-center pb-2 hover:shadow-xl"
+              >
+                <div class="relative">
+                  <img
+                    src="dist/img/service/4.jpg"
+                    alt="Land Mining"
+                    class="w-full h-52 object-cover rounded-lg rounded-b-none mb-4"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 p-2 text-xs"
+                  >
+                    Pictures by Pinterest
+                  </p>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                  <div
+                    class="bg-gray-200 p-3 rounded-full inline-flex items-center justify-center"
+                  >
+                    <span class="text-3xl">⛏️</span>
+                  </div>
+                  <h2 class="text-xl font-semibold">Eksplorasi Tambang</h2>
+                </div>
+                <p class="text-gray-600 mt-2 px-3">
+                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
+                  bertanggung jawab.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-2 text-center">
+              <div
+                class="card shadow-md rounded-lg text-center pb-2 hover:shadow-xl"
+              >
+                <div class="relative">
+                  <img
+                    src="dist/img/service/5.jpg"
+                    alt="Land Mining"
+                    class="w-full h-52 object-cover rounded-lg rounded-b-none mb-4"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 p-2 text-xs"
+                  >
+                    Pictures by Pinterest
+                  </p>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                  <div
+                    class="bg-gray-200 p-3 rounded-full inline-flex items-center justify-center"
+                  >
+                    <span class="text-3xl">⛏️</span>
+                  </div>
+                  <h2 class="text-xl font-semibold">Eksplorasi Tambang</h2>
+                </div>
+                <p class="text-gray-600 mt-2 px-3">
+                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
+                  bertanggung jawab.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-2 text-center">
+              <div
+                class="card shadow-md rounded-lg text-center pb-2 hover:shadow-xl"
+              >
+                <div class="relative">
+                  <img
+                    src="dist/img/service/6.jpg"
+                    alt="Land Mining"
+                    class="w-full h-52 object-cover rounded-lg rounded-b-none mb-4"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 text-white bg-black bg-opacity-50 p-2 text-xs"
+                  >
+                    Pictures by Pinterest
+                  </p>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                  <div
+                    class="bg-gray-200 p-3 rounded-full inline-flex items-center justify-center"
+                  >
+                    <span class="text-3xl">⛏️</span>
+                  </div>
+                  <h2 class="text-xl font-semibold">Eksplorasi Tambang</h2>
+                </div>
+                <p class="text-gray-600 mt-2 px-3">
+                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
+                  bertanggung jawab.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next hover:bg-yellow-200 transition-all bg-opacity-95 bg-white w-10 h-10 rounded-full p-5 shadow-lg swiper-navBtn mr-20"
+        ></div>
+        <div
+          class="swiper-button-prev hover:bg-yellow-200 transition-all bg-opacity-95 bg-white w-10 h-10 rounded-full p-5 shadow-lg swiper-navBtn ml-20"
+        ></div>
+        <div
+          class="swiper-pagination pt-10 opacity-100 dark:opacity-100 dark:grayscale"
+        ></div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 pt-12 pb-20 scroll-container">
+      <div class="animate-scroll" id="logo-scroll">
+        <img src="dist/img/logo/1.png" alt="Brand Logo 1" class="logo-img" />
+        <img src="dist/img/logo/1.png" alt="Brand Logo 2" class="logo-img" />
+        <img src="dist/img/logo/1.png" alt="Brand Logo 3" class="logo-img" />
+        <img src="dist/img/logo/1.png" alt="Brand Logo 4" class="logo-img" />
+        <img src="dist/img/logo/1.png" alt="Brand Logo 5" class="logo-img" />
+      </div>
+    </section>
+
+    <script>
+      const logoScroll = document.getElementById("logo-scroll");
+
+      function duplicateLogos() {
+        const logos = logoScroll.innerHTML;
+        logoScroll.innerHTML += logos;
+      }
+
+      function startScroll() {
+        let scrollPosition = 0;
+
+        setInterval(() => {
+          scrollPosition += 1;
+          logoScroll.scrollLeft = scrollPosition;
+
+          if (scrollPosition >= logoScroll.scrollWidth / 2) {
+            scrollPosition = 0;
+          }
+        }, 10);
+      }
+
+      duplicateLogos();
+      startScroll();
+    </script>
+
+    <script src="dist/js/general/swiper-bundle.min.js"></script>
+    <script src="dist/js/general/swiper.js"></script>
+  </body>
+</html>
