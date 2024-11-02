@@ -28,6 +28,8 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
+
+
 //  Swiper  Portofolio 
 // var swiper1 = new Swiper(".slide-content1", {
 //     slidesPerView: 1,
