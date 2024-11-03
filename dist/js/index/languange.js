@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         en: {
             home: "Home",
-            about: "About Me",
-            experience: "Experience",
-            education: "Education",
-            portofolio: "Portfolio",
+            company: "Company",
+            solution: "Solution",
+            project: "Project",
+            features: "Features",
             skill: "Skills",
             contact: "Contact",
             light: "Light",
@@ -92,10 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Atur tampilan tombol yang aktif
     if (currentLang === "id") {
-        btnID.classList.add("text-primary", "font-bold");
-        btnEN.classList.remove("text-primary", "font-bold");
+        btnID.classList.add("text-yellow-500", "font-bold");
+        btnEN.classList.remove("text-yellow-500", "font-bold");
     } else {
-        btnEN.classList.add("text-primary", "font-bold");
-        btnID.classList.remove("text-primary", "font-bold");
+        btnEN.classList.add("text-yellow-500", "font-bold");
+        btnID.classList.remove("text-yellow-500", "font-bold");
     }
 });

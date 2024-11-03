@@ -58,7 +58,7 @@ body {
 }
 
 .nav-item {
-  @apply text-base py-2 mx-2 flex hover:text-yellow-400;
+  @apply text-base py-2 mx-2 flex hover:text-yellow-500;
 }
 
 .language-switcher {
@@ -66,14 +66,14 @@ body {
 }
 
 .language-button {
-  @apply mx-2 lg:mx-1 text-base py-2 hover:text-yellow-400;
+  @apply mx-2 lg:mx-1 text-base py-2 hover:text-yellow-500;
 }
 
 .theme-toggle {
   @apply relative transition duration-300 ease-in-out mt-1 text-secondary dark:text-white mx-4 lg:mx-1;
 }
 .theme-button {
-  @apply text-base py-2 flex items-center w-full hover:text-yellow-400;
+  @apply text-base py-2 flex items-center w-full hover:text-yellow-500;
 }
 
 .theme-dropdown {
@@ -81,11 +81,11 @@ body {
 }
 
 .theme-option {
-  @apply flex items-center justify-between p-2 hover:text-yellow-400 cursor-pointer text-base py-2 mx-2;
+  @apply flex items-center justify-between p-2 hover:text-yellow-500 cursor-pointer text-base py-2 mx-2;
 }
 
 .theme-option .i {
-  @apply text-sm text-secondary dark:text-white group-hover:text-yellow-400;
+  @apply text-sm text-secondary dark:text-white group-hover:text-yellow-500;
 }
 #nav-menu {
   transition: max-height 0.3s ease-in-out;
@@ -98,6 +98,6 @@ body {
 #portofolioLink.active,
 #skillLink.active,
 #contactLink.active {
-  @apply text-yellow-400 font-bold;
+  @apply text-yellow-500 font-bold;
 }
 /* Header End */

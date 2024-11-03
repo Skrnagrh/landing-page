@@ -72,11 +72,11 @@
   color: #ffffff; 
 }
 .swiper-pagination-bullet {
-  background-color: #14b8a57a;
+  background-color: #facc15;
 }
 .swiper-pagination-bullet-active,
 .swiper-pagination1-bullet-active {
-  background-color: #14b8a6;
+  background-color: #facc15;
 }
 @media screen and (max-width: 768px) {
   .slide-content {

@@ -29,22 +29,22 @@ document.addEventListener("DOMContentLoaded", function () {
         const language = localStorage.getItem('language') || 'id'; // Ambil bahasa dari localStorage atau default ke 'id'
   
         // Reset active state for all options
-        lightOption.classList.remove("text-primary", "font-bold");
-        darkOption.classList.remove("text-primary", "font-bold");
-        autoOption.classList.remove("text-primary", "font-bold");
+        lightOption.classList.remove("text-yellow-500", "font-bold");
+        darkOption.classList.remove("text-yellow-500", "font-bold");
+        autoOption.classList.remove("text-yellow-500", "font-bold");
   
         if (theme === "dark") {
             darkModeText.textContent = translations[language].dark;
             themeIcon.className = "bi bi-moon-stars-fill ml-2";
-            darkOption.classList.add("text-primary", "font-bold");
+            darkOption.classList.add("text-yellow-500", "font-bold");
         } else if (theme === "light") {
             darkModeText.textContent = translations[language].light;
             themeIcon.className = "bi bi-sun-fill ml-2";
-            lightOption.classList.add("text-primary", "font-bold");
+            lightOption.classList.add("text-yellow-500", "font-bold");
         } else {
             darkModeText.textContent = translations[language].auto;
             themeIcon.className = "bi bi-circle-half ml-2";
-            autoOption.classList.add("text-primary", "font-bold");
+            autoOption.classList.add("text-yellow-500", "font-bold");
         }
     }
   
