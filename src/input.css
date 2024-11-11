@@ -101,3 +101,306 @@ body {
   @apply text-yellow-500 font-bold;
 }
 /* Header End */
+/* General End */
+
+/* Hero Start */
+.hero-section {
+  @apply bg-slate-100 dark:bg-slate-800 relative;
+}
+
+.main-container {
+  @apply relative overflow-hidden;
+}
+
+.overlay-content {
+  @apply w-full h-screen;
+}
+
+.hero-content {
+  @apply flex justify-center items-center;
+}
+
+.hero-img {
+  @apply w-full h-full object-cover;
+}
+
+.hero-text {
+  @apply absolute inset-0 bg-black/50 flex flex-col justify-center text-white px-8 lg:px-20;
+}
+
+.hero-text h1 {
+  @apply uppercase text-2xl md:text-6xl font-bold mb-1 justify-start text-start mx-10 lg:mx-20;
+}
+
+.hero-text span {
+  @apply text-yellow-500;
+}
+
+.hero-text p {
+  @apply text-sm md:text-xl mb-6 mx-10 lg:mx-20 lg:w-1/2;
+}
+
+.hero-button {
+  @apply w-full pb-10 mx-10 lg:mx-20;
+}
+
+.hero-button a {
+  @apply text-sm font-bold text-white bg-yellow-500 py-3 px-6 rounded-xl hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out;
+}
+
+.hero-button i {
+  @apply text-base font-bold;
+}
+
+.hero-nextprev {
+  @apply transition-all border-2 hover:border-yellow-400 border-white rounded-full p-5;
+}
+/* Hero End */
+
+/* Company Start */
+.company-section {
+  @apply py-16 relative dark:bg-charcoal;
+}
+
+.company-content {
+  @apply lg:mx-20 -mt-36;
+}
+
+.company-container {
+  @apply container mx-auto flex flex-wrap lg:flex-nowrap gap-8 relative z-10;
+}
+
+.company-card {
+  @apply rounded-lg shadow-lg flex flex-col lg:flex-row;
+}
+
+.company-left {
+  @apply bg-yellow-500 dark:bg-gunmetal dark:border-2 dark:border-secondary lg:dark:border-r-0 text-white dark:text-secondary p-8 rounded-lg lg:rounded-l-lg lg:rounded-r-none flex flex-col justify-between lg:w-1/2 mb-4 lg:mb-0;
+}
+
+.company-left h3 {
+  @apply text-gray-800 dark:text-white uppercase font-semibold text-sm;
+}
+
+.company-left h2 {
+  @apply text-4xl font-bold mt-2 dark:text-yellow-600;
+}
+
+.company-left p {
+  @apply text-gray-700 mt-4 dark:text-slate-100;
+}
+
+.company-button {
+  @apply mt-8 bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition duration-300;
+}
+
+.company-right {
+  @apply bg-white dark:text-secondary dark:bg-onyx dark:border-2 dark:border-secondary lg:dark:border-l-0 rounded-lg lg:rounded-r-lg lg:rounded-l-none p-8 lg:w-1/2 grid grid-cols-2 gap-8 relative;
+}
+
+.line-vertikal {
+  @apply absolute inset-y-0 left-1/2 w-px bg-gray-300 dark:bg-gray-500 rounded-full my-2;
+}
+
+.line-horizontal {
+  @apply absolute inset-x-0 top-1/2 h-px bg-gray-300 dark:bg-gray-500 rounded-full mx-2;
+}
+
+.right-content {
+  @apply flex flex-col md:flex-row items-center text-center md:text-left;
+}
+
+.right-content i {
+  @apply text-yellow-400 text-5xl md:mr-4 mb-2 md:mb-0;
+}
+
+.right-content .counter {
+  @apply text-yellow-500 text-3xl lg:text-5xl font-bold;
+}
+
+.right-content p {
+  @apply text-gray-700 dark:text-slate-200;
+}
+/* Company End */
+
+/* Solution Start */
+.solution-section {
+  @apply py-16 dark:bg-dark;
+}
+
+.solution-text {
+  @apply text-center mb-12;
+}
+
+.solution-text h3 {
+  @apply text-yellow-500 uppercase font-semibold;
+}
+
+.solution-text h1 {
+  @apply text-3xl font-bold dark:text-white;
+}
+
+.gradient-left {
+  @apply absolute top-0 bottom-0 w-10 lg:w-40 bg-gradient-to-r from-white dark:from-dark to-transparent z-10 pointer-events-none;
+}
+
+.gradient-right {
+  @apply absolute top-0 bottom-0 w-10 lg:w-40 bg-gradient-to-l from-white dark:from-dark to-transparent right-0 z-10 pointer-events-none;
+}
+
+.solution-content {
+  @apply p-2 text-center;
+}
+
+.solution-content .card {
+  @apply bg-white dark:bg-black dark:shadow-lg dark:hover:shadow-gunmetal shadow-md rounded-lg text-center pb-2 hover:shadow-xl;
+}
+
+.solution-content img {
+  @apply w-full h-52 object-cover rounded-lg rounded-b-none mb-4;
+}
+
+.text-img {
+  @apply absolute left-0 text-white bg-black bg-opacity-50 p-2 text-xs top-0 lg:top-auto lg:bottom-0 rounded-tl-lg lg:rounded-none;
+}
+
+.card-content {
+  @apply flex items-center justify-center space-x-3;
+}
+
+.card-content span {
+  @apply bg-gray-200 dark:bg-charcoal p-3 rounded-full inline-flex items-center justify-center text-3xl;
+}
+
+.card-content h2 {
+  @apply text-xl font-semibold dark:text-slate-100;
+}
+
+.text-card {
+  @apply text-secondary dark:text-slate-300 mt-2 px-3;
+}
+
+.next-prev {
+  @apply transition-all hover:bg-yellow-400 bg-white bg-opacity-95 rounded-full p-5 shadow-lg;
+}
+/* Solution End */
+
+/* Introduction Start  */
+.intro-section {
+  @apply mx-auto grid md:grid-cols-2;
+}
+
+.intro-bg {
+  @apply relative bg-cover bg-center p-10 text-white;
+}
+
+.intro-overlay {
+  @apply absolute inset-0 bg-black opacity-40 z-0;
+}
+
+.intro-content {
+  @apply relative z-10;
+}
+
+.intro-content span {
+  @apply text-yellow-500 uppercase tracking-wide font-semibold;
+}
+
+.intro-content h2 {
+  @apply text-4xl font-bold mt-2;
+}
+
+.intro-content p {
+  @apply mt-4 text-lg;
+}
+
+.intro-content button {
+  @apply mt-6 bg-yellow-400 text-white font-semibold py-2 px-6 rounded-lg hover:bg-yellow-500;
+}
+
+.intro-right {
+  @apply bg-yellow-400 p-10;
+}
+
+.intro-right h2 {
+  @apply text-3xl font-bold text-black mb-4;
+}
+
+.intro-right p {
+  @apply text-black mb-8;
+}
+
+.intro-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6;
+}
+
+.intro-item {
+  @apply flex items-center space-x-3;
+}
+
+.intro-item i {
+  @apply text-3xl;
+}
+
+.intro-item h3 {
+  @apply text-lg font-semibold;
+}
+/* Introduction End */
+
+/* Project Start */
+.project-section {
+  @apply py-16 dark:bg-dark;
+}
+
+.project-text {
+  @apply text-center mb-5;
+}
+
+.project-text h3 {
+  @apply text-yellow-500 uppercase font-semibold;
+}
+
+.project-text h1 {
+  @apply text-3xl font-bold dark:text-white;
+}
+
+.project-btn {
+  @apply flex justify-center lg:justify-start lg:flex-col lg:mr-10 mb-10 lg:mb-0 lg:border-r lg:pr-6 space-x-2 lg:space-x-0;
+}
+
+.project-btn button {
+  @apply text-gray-500 dark:text-slate-400 dark:active:text-yellow-500  lg:px-4 lg:py-2 lg:text-end;
+}
+
+.project-grid {
+  @apply grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2;
+}
+
+.project-card img {
+  @apply w-full h-64 object-cover;
+}
+
+.project-card .by {
+  @apply absolute left-0 text-white bg-black bg-opacity-50 p-2 text-xs top-0 rounded-br-xl;
+}
+
+.proverlay-1 {
+  @apply absolute inset-x-0 bottom-0 h-0 bg-yellow-400 bg-opacity-85 opacity-0 group-hover:h-full group-hover:opacity-100 transition-all duration-500 ease-out;
+}
+
+.proverlay-2 {
+  @apply absolute inset-0 bg-gradient-to-t from-black/85 to-black/0;
+}
+
+.procard-text {
+  @apply absolute bottom-14 left-4 transform -translate-x-0 translate-y-10 group-hover:translate-y-0 transition-all duration-700 text-white;
+}
+
+.procard-text h2 {
+  @apply text-xl font-semibold;
+}
+
+.procard-text p {
+  @apply text-sm;
+}
+/* Project End */
