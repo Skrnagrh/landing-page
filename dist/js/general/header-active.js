@@ -1,100 +1,100 @@
-// Active Nabbar
-// Mendapatkan elemen #homeLink, #aboutLink, #experienceLink, #educationLink, #portofolioLink, #skillLink, dan #contactLink
-var homeLink = document.getElementById("homeLink");
-var aboutLink = document.getElementById("aboutLink");
-var experienceLink = document.getElementById("experienceLink");
-var educationLink = document.getElementById("educationLink");
-var portofolioLink = document.getElementById("portofolioLink");
-var skillLink = document.getElementById("skillLink");
-var contactLink = document.getElementById("contactLink");
+ // Active Nabbar
 
-// Mendapatkan elemen #about, #experience, #education, #portofolio, #skill, dan #contact
-var aboutSection = document.getElementById("about");
-var experienceSection = document.getElementById("experience");
-var educationSection = document.getElementById("education");
-var portofolioSection = document.getElementById("portofolio");
-var skillSection = document.getElementById("skill");
-var contactSection = document.getElementById("contact");
+ var homeLink = document.getElementById("homeLink");
+ var companyLink = document.getElementById("companyLink");
+ var solutionLink = document.getElementById("solutionLink");
+ var projectLink = document.getElementById("projectLink");
+ var featuresLink = document.getElementById("featuresLink");
+ var blogLink = document.getElementById("blogLink");
+ var contactLink = document.getElementById("contactLink");
 
-// Mengecek URL halaman saat ini
-var currentPage = window.location.pathname;
+ // Mendapatkan elemen #company, #solution, #project, #features, #blog, dan #contact
+ var companySection = document.getElementById("company");
+ var solutionSection = document.getElementById("solution");
+ var projectSection = document.getElementById("project");
+ var featuresSection = document.getElementById("features");
+ var blogSection = document.getElementById("blog");
+ var contactSection = document.getElementById("contact");
 
-// Mengecek status elemen aktif dari penyimpanan sesi
-var activeElement = sessionStorage.getItem("activeElement");
+ // Mengecek URL halaman saat ini
+ var currentPage = window.location.pathname;
 
-// Jika halaman saat ini adalah index.html atau root, set homeLink sebagai aktif
-if (currentPage === "/" || currentPage.endsWith("index.html")) {
-  setActiveElement("homeLink");
-} else if (activeElement) {
-  document.getElementById(activeElement).classList.add("active");
-}
+ // Mengecek status elemen aktif dari penyimpanan sesi
+ var activeElement = sessionStorage.getItem("activeElement");
 
-// Menambahkan event listener untuk menangkap saat pengguna men-scroll
-window.addEventListener("scroll", function () {
-  // Mendapatkan posisi (offset) dari masing-masing elemen
-  var aboutSectionOffset = aboutSection.offsetTop;
-  var experienceSectionOffset = experienceSection.offsetTop;
-  var educationSectionOffset = educationSection.offsetTop;
-  var portofolioSectionOffset = portofolioSection.offsetTop;
-  var skillSectionOffset = skillSection.offsetTop;
-  var contactSectionOffset = contactSection.offsetTop;
+ // Jika halaman saat ini adalah index.html atau root, set homeLink sebagai aktif
+ if (currentPage === "/" || currentPage.endsWith("index.html")) {
+   setActiveElement("homeLink");
+ } else if (activeElement) {
+   document.getElementById(activeElement).classList.add("active");
+ }
 
-  // Mendapatkan posisi (offset) dari titik tengah layar
-  var screenHeight = window.innerHeight / 2;
+ // Menambahkan event listener untuk menangkap saat pengguna men-scroll
+ window.addEventListener("scroll", function () {
+   // Mendapatkan posisi (offset) dari masing-masing elemen
+   var companySectionOffset = companySection.offsetTop;
+   var solutionSectionOffset = solutionSection.offsetTop;
+   var projectSectionOffset = projectSection.offsetTop;
+   var featuresSectionOffset = featuresSection.offsetTop;
+   var blogSectionOffset = blogSection.offsetTop;
+   var contactSectionOffset = contactSection.offsetTop;
 
-  // Menentukan apakah pengguna men-scroll ke bawah elemen masing-masing
-  if (window.scrollY < aboutSectionOffset - screenHeight) {
-    setActiveElement("homeLink");
-  } else if (
-    window.scrollY > aboutSectionOffset - screenHeight &&
-    window.scrollY < experienceSectionOffset - screenHeight
-  ) {
-    setActiveElement("aboutLink");
-  } else if (
-    window.scrollY > experienceSectionOffset - screenHeight &&
-    window.scrollY < educationSectionOffset - screenHeight
-  ) {
-    setActiveElement("experienceLink");
-  } else if (
-    window.scrollY > educationSectionOffset - screenHeight &&
-    window.scrollY < portofolioSectionOffset - screenHeight
-  ) {
-    setActiveElement("educationLink");
-  } else if (
-    window.scrollY > portofolioSectionOffset - screenHeight &&
-    window.scrollY < skillSectionOffset - screenHeight
-  ) {
-    setActiveElement("portofolioLink");
-  } else if (
-    window.scrollY > skillSectionOffset - screenHeight &&
-    window.scrollY < contactSectionOffset - screenHeight
-  ) {
-    setActiveElement("skillLink");
-  } else if (window.scrollY > contactSectionOffset - screenHeight) {
-    setActiveElement("contactLink");
-  } else {
-    setActiveElement("homeLink");
-  }
-});
+   // Mendapatkan posisi (offset) dari titik tengah layar
+   var screenHeight = window.innerHeight / 2;
 
-// Fungsi untuk menandai elemen sebagai aktif dan menyimpan ke penyimpanan sesi
-function setActiveElement(elementId) {
-  // Menghapus kelas "active" dari semua elemen navigasi
-  [
-    homeLink,
-    aboutLink,
-    experienceLink,
-    educationLink,
-    portofolioLink,
-    skillLink,
-    contactLink
-  ].forEach(function (el) {
-    el.classList.remove("active");
-  });
+   // Menentukan apakah pengguna men-scroll ke bawah elemen masing-masing
+   if (window.scrollY < companySectionOffset - screenHeight) {
+     setActiveElement("homeLink");
+   } else if (
+     window.scrollY > companySectionOffset - screenHeight &&
+     window.scrollY < solutionSectionOffset - screenHeight
+   ) {
+     setActiveElement("companyLink");
+   } else if (
+     window.scrollY > solutionSectionOffset - screenHeight &&
+     window.scrollY < projectSectionOffset - screenHeight
+   ) {
+     setActiveElement("solutionLink");
+   } else if (
+     window.scrollY > projectSectionOffset - screenHeight &&
+     window.scrollY < featuresSectionOffset - screenHeight
+   ) {
+     setActiveElement("projectLink");
+   } else if (
+     window.scrollY > featuresSectionOffset - screenHeight &&
+     window.scrollY < blogSectionOffset - screenHeight
+   ) {
+     setActiveElement("featuresLink");
+   } else if (
+     window.scrollY > blogSectionOffset - screenHeight &&
+     window.scrollY < contactSectionOffset - screenHeight
+   ) {
+     setActiveElement("blogLink");
+   } else if (window.scrollY > contactSectionOffset - screenHeight) {
+     setActiveElement("contactLink");
+   } else {
+     setActiveElement("homeLink");
+   }
+ });
 
-  // Menambahkan kelas "active" pada elemen yang aktif
-  document.getElementById(elementId).classList.add("active");
+ // Fungsi untuk menandai elemen sebagai aktif dan menyimpan ke penyimpanan sesi
+ function setActiveElement(elementId) {
+   // Menghapus kelas "active" dari semua elemen navigasi
+   [
+     homeLink,
+     companyLink,
+     solutionLink,
+     projectLink,
+     featuresLink,
+     blogLink,
+     contactLink,
+   ].forEach(function (el) {
+     el.classList.remove("active");
+   });
 
-  // Menyimpan informasi elemen yang aktif ke penyimpanan sesi
-  sessionStorage.setItem("activeElement", elementId);
-}
+   // Menambahkan kelas "active" pada elemen yang aktif
+   document.getElementById(elementId).classList.add("active");
+
+   // Menyimpan informasi elemen yang aktif ke penyimpanan sesi
+   sessionStorage.setItem("activeElement", elementId);
+ }

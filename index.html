@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/css/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/dist/img/logo/2.png" />
     <title>MiningFix Indonesia</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
+    <!-- Tailwind -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" /> -->
-    <!-- <link rel="stylesheet" href="dist/css/swiper/swiper-bundle.min.css" /> -->
+    <!-- Tailwind -->
+
+    <!-- Icon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Icon Bootstrap -->
+
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="dist/css/swiper/swiper.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Swiper CSS -->
   </head>
 
   <body>
@@ -26,16 +31,11 @@
     <header class="header">
       <div class="container">
         <div class="navbar-container">
-          <!-- <div class="px-4">
-            <a href="#home" class="navbar-brand"
-              ><img src="dist/img/logo/1.png" alt="" class="max-w-44 lg:w-64" />
-            </a>
-          </div> -->
-          <div class="flex items-center justify-start -mx-1">
+          <a href="#home" class="flex items-center justify-start -mx-1">
             <img
               src="dist/img/logo/2.png"
               alt="logo"
-              class="w-16 h-16 rounded-full mr-4"
+              class="max-w-20 rounded-full mr-4"
             />
             <div class="-mx-3">
               <h1 class="text-lg font-semibold uppercase text-yellow-500">
@@ -45,9 +45,9 @@
                 Indonesia
               </p>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center px-4">
+          <div class="flex items-center">
             <button
               id="hamburger"
               name="hamburger"
@@ -153,23 +153,6 @@
               </ul>
             </nav>
           </div>
-
-          <!-- <div class="hidden relative right-16 lg:right-4 xl:right-16">
-            <div class="flex">
-              <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
-              <input type="checkbox" class="hidden" id="dark-toggle" />
-              <label for="dark-toggle">
-                <div
-                  class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-                >
-                  <div
-                    class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
-                  ></div>
-                </div>
-              </label>
-              <i class="bi bi-moon-stars-fill ml-2 text-sm text-slate-500"></i>
-            </div>
-          </div> -->
         </div>
       </div>
     </header>
@@ -181,13 +164,13 @@
         <div class="overlay-content swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-content">
-              <img src="dist/img/home-1.jpg" class="hero-img" />
+              <img src="dist/img/hero/1.jpg" class="hero-img" />
               <div class="container">
                 <div class="hero-text">
-                  <h1>Visi Menjadi <span>Lebih Luas</span></h1>
+                  <h1>Pertambangan <span>Berkelanjutan</span></h1>
                   <p>
-                    Cari di database kami untuk menemukan penyedia terbaik di
-                    segmen utama industri apertambangan.
+                    Temukan penyedia terbaik untuk pertambangan berkelanjutan di
+                    sini.
                   </p>
                   <div class="hero-button">
                     <a href="#" class="translate">
@@ -199,13 +182,13 @@
               </div>
             </div>
             <div class="swiper-slide hero-content">
-              <img src="dist/img/home-2.jpg" class="hero-img" />
+              <img src="dist/img/hero/2.jpg" class="hero-img" />
               <div class="container">
                 <div class="hero-text">
-                  <h1>SHIP <span>REPAIR</span></h1>
+                  <h1>Mendukung Infrastruktur <span>Dunia</span></h1>
                   <p>
-                    Search our databases of the Top 100 providers in key
-                    segments of the supply chain industry.
+                    Temukan penyedia terkemuka untuk mendukung infrastruktur
+                    dunia.
                   </p>
                   <div class="hero-button">
                     <a href="#" class="translate">
@@ -216,13 +199,13 @@
               </div>
             </div>
             <div class="swiper-slide hero-content">
-              <img src="dist/img/home-3.jpg" class="hero-img" />
+              <img src="dist/img/hero/3.jpg" class="hero-img" />
               <div class="container">
                 <div class="hero-text">
-                  <h1>SHIP <span>RECYCLING</span></h1>
+                  <h1>Efisiensi, Keamanan, <span> Dan Keberlanjutan </span></h1>
                   <p>
-                    Search our databases of the Top 100 providers in key
-                    segments of the supply chain industry.
+                    Temukan penyedia terbaik untuk efisiensi, keamanan, dan
+                    keberlanjutan.
                   </p>
                   <div class="hero-button">
                     <a href="#" class="translate">
@@ -333,12 +316,12 @@
                   <p class="text-img">Pictures by Pinterest</p>
                 </div>
                 <div class="card-content">
-                  <span>⛏️</span>
+                  <span>🛠️</span>
                   <h2>Eksplorasi Tambang</h2>
                 </div>
                 <p class="text-card">
-                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
-                  bertanggung jawab.
+                  Menjelajahi sumber daya mineral dengan teknologi modern dan
+                  aman.
                 </p>
               </div>
             </div>
@@ -353,7 +336,8 @@
                   <h2>Pengelolaan Lapangan</h2>
                 </div>
                 <p class="text-card">
-                  Menyediakan tenaga kerja profesional di area pertambangan.
+                  Menyediakan tenaga kerja profesional dan peralatan di area
+                  tambang.
                 </p>
               </div>
             </div>
@@ -364,13 +348,12 @@
                   <p class="text-img">Pictures by Pinterest</p>
                 </div>
                 <div class="card-content">
-                  <span>⛏️</span>
-
-                  <h2>Eksplorasi Tambang</h2>
+                  <span>🚜</span>
+                  <h2>Proses Pemindahan Tanah</h2>
                 </div>
                 <p class="text-card">
-                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
-                  bertanggung jawab.
+                  Memindahkan material dengan efisien untuk persiapan
+                  penambangan.
                 </p>
               </div>
             </div>
@@ -381,12 +364,12 @@
                   <p class="text-img">Pictures by Pinterest</p>
                 </div>
                 <div class="card-content">
-                  <span>⛏️</span>
-                  <h2>Eksplorasi Tambang</h2>
+                  <span> 🚚 </span>
+                  <h2>Transportasi Material</h2>
                 </div>
                 <p class="text-card">
-                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
-                  bertanggung jawab.
+                  Mengangkut bahan tambang dari lokasi tambang ke area
+                  pengolahan.
                 </p>
               </div>
             </div>
@@ -398,11 +381,11 @@
                 </div>
                 <div class="card-content">
                   <span>⛏️</span>
-                  <h2>Eksplorasi Tambang</h2>
+                  <h2>Penimbunan Material</h2>
                 </div>
                 <p class="text-card">
-                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
-                  bertanggung jawab.
+                  Menyimpan hasil tambang secara aman untuk pengelolaan yang
+                  efisien.
                 </p>
               </div>
             </div>
@@ -413,12 +396,12 @@
                   <p class="text-img">Pictures by Pinterest</p>
                 </div>
                 <div class="card-content">
-                  <span>⛏️</span>
-                  <h2>Eksplorasi Tambang</h2>
+                  <span>🏗️</span>
+                  <h2>Infrastruktur Tambang</h2>
                 </div>
                 <p class="text-card">
-                  Meningkatkan kesejahteraan masyarakat melalui eksplorasi yang
-                  bertanggung jawab.
+                  Membangun infrastruktur untuk mendukung kegiatan tambang yang
+                  berkelanjutan.
                 </p>
               </div>
             </div>
@@ -439,7 +422,7 @@
       <div class="intro-section">
         <div
           class="intro-bg"
-          style="background-image: url('dist/img/home-1.jpg')"
+          style="background-image: url('dist/img/hero/1.jpg')"
         >
           <div class="intro-overlay"></div>
           <div class="intro-content">
@@ -515,7 +498,7 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Oxford Science Lab Building</h2>
+                <h2>Oxford Construction Site</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -526,7 +509,7 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Demra Science Lab Bridge</h2>
+                <h2>Demra Quarry Operations</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -537,7 +520,7 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Kelly Science Lab Home</h2>
+                <h2>Kelly Excavation Project</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -548,7 +531,7 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Orna Science Mining Lab</h2>
+                <h2>Orna Tunnel Drilling Site</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -559,7 +542,7 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Dimla Science Lab Building</h2>
+                <h2>Dimla Excavation Project</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -570,18 +553,18 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Oxford Science Home Lab</h2>
+                <h2>Oxford Heavy Machinery Lab</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
 
-            <div class="relative group project-card" data-category="building">
+            <div class="relative group project-card" data-category="mining">
               <img src="dist/img/project/7.jpg" alt="Project 5" />
               <p class="by">Pictures by Pinterest</p>
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Dimla Science Lab Building</h2>
+                <h2>Oxford Construction Hub</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -592,7 +575,7 @@
               <div class="proverlay-1"></div>
               <div class="proverlay-2"></div>
               <div class="procard-text">
-                <h2>Oxford Science Home Lab</h2>
+                <h2>Dimla Load Transfer Site</h2>
                 <p>New Jersey, NY</p>
               </div>
             </div>
@@ -676,7 +659,7 @@
           <div class="testi-people">
             <img
               id="testimonial-image"
-              src="dist/img/test.jpg"
+              src="dist/img/testi/1.jpg"
               alt="Client Image"
             />
             <div>
@@ -719,33 +702,33 @@
               <i class="bi bi-clock"></i>
               <span>21-03-2019</span>
             </div>
-            <h3>Riding with friend is the best feeling</h3>
+            <h3>Membangun Infrastruktur Pertambangan untuk Masa Depan</h3>
           </div>
 
           <!-- Card 2 -->
           <div class="blog-card">
             <img src="dist/img/blog/2.jpg" alt="Media Image 2" />
             <div class="blog-icon">
-              <i class="bi bi-house"></i>
-              <span>House</span>
+              <i class="bi bi-building"></i>
+              <span>Building</span>
               <span>|</span>
               <i class="bi bi-clock"></i>
-              <span>21/03/2019</span>
+              <span>21-03-2019</span>
             </div>
-            <h3>BMW vs Austin Martin going higher</h3>
+            <h3>Pemantauan Operasi untuk Keamanan dan Efisiensi</h3>
           </div>
 
           <!-- Card 3 -->
           <div class="blog-card">
             <img src="dist/img/blog/3.jpg" alt="Media Image 3" />
             <div class="blog-icon">
-              <i class="bi bi-house"></i>
-              <span>House</span>
+              <i class="bi bi-building"></i>
+              <span>Building</span>
               <span>|</span>
               <i class="bi bi-clock"></i>
-              <span>24/03/2018</span>
+              <span>24-03-2018</span>
             </div>
-            <h3>Caring for construction more solution</h3>
+            <h3>Memastikan Standar Keamanan di Setiap Proses</h3>
           </div>
         </div>
       </div>
@@ -930,353 +913,35 @@
     </a>
     <!-- Back To Top End -->
 
+    <!-- General -->
     <script src="/dist/js/general/darkmode.js"></script>
     <script src="/dist/js/general/hamburger.js"></script>
-    <!-- <script src="/dist/js/general/header-active.js"></script> -->
+    <script src="/dist/js/general/header-active.js"></script>
     <script src="/dist/js/general/header-fixed.js"></script>
     <script src="/dist/js/general/year.js"></script>
-    <script src="dist/js/index/languange.js"></script>
+    <script src="/dist/js/general/languange.js"></script>
+    <!-- General -->
 
-    <!-- <script>
-      // JavaScript untuk Filter
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const projectCards = document.querySelectorAll(".project-card");
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const filter = button.getAttribute("data-filter");
-
-          // Tampilkan kartu sesuai kategori yang dipilih
-          projectCards.forEach((card) => {
-            if (
-              filter === "all" ||
-              card.getAttribute("data-category") === filter
-            ) {
-              card.classList.remove("hidden");
-            } else {
-              card.classList.add("hidden");
-            }
-          });
-
-          // Update tombol aktif
-          filterButtons.forEach((btn) =>
-            btn.classList.remove(
-              "text-yellow-500",
-              "border-b-2",
-              "border-yellow-500"
-            )
-          );
-          button.classList.add(
-            "text-yellow-500",
-            "border-b-2",
-            "border-yellow-500"
-          );
-        });
-      });
-    </script> -->
-    <!-- JavaScript for navigating testimonials -->
-    <script>
-      const testimonials = [
-        {
-          text: "MiningFix Solution telah membantu kami dalam pengembangan tambang dengan pendekatan yang ramah lingkungan dan efisien, sangat merekomendasikan.",
-          image: "dist/img/test.jpg",
-          name: "Jonas Blue",
-          role: "CEO Media",
-        },
-        {
-          text: "The team was very professional and helped us find the right solution for our needs. Highly recommend!",
-          image: "dist/img/test1.jpg",
-          name: "Sarah Smith",
-          role: "Marketing Director",
-        },
-        {
-          text: "Exceptional service and support throughout our project. We couldn't be happier with the outcome.",
-          image: "dist/img/test2.jpg",
-          name: "Michael Lee",
-          role: "Project Manager",
-        },
-      ];
-
-      let currentIndex = 0;
-
-      function updateTestimonial() {
-        const testimonial = testimonials[currentIndex];
-        document.getElementById("testimonial-text").innerText =
-          testimonial.text;
-        document.getElementById("testimonial-image").src = testimonial.image;
-        document.getElementById("testimonial-name").innerText =
-          testimonial.name;
-        document.getElementById("testimonial-role").innerText =
-          testimonial.role;
-      }
-
-      function showNext() {
-        currentIndex = (currentIndex + 1) % testimonials.length;
-        updateTestimonial();
-      }
-
-      function showPrev() {
-        currentIndex =
-          (currentIndex - 1 + testimonials.length) % testimonials.length;
-        updateTestimonial();
-      }
-
-      // Initialize with the first testimonial
-      updateTestimonial();
-    </script>
-    <!-- Menghitung Angka -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const counters = [
-          { id: "counter1", target: 512, duration: 2000 },
-          { id: "counter2", target: 52, duration: 2000 },
-          { id: "counter3", target: 1120, duration: 2000 },
-          { id: "counter4", target: 1520, duration: 2000 },
-        ];
-
-        counters.forEach((counter) => {
-          const element = document.getElementById(counter.id);
-          let count = 0;
-          const increment = counter.target / (counter.duration / 10);
-
-          function updateCounter() {
-            count += increment;
-            if (count >= counter.target) {
-              element.innerText = counter.target;
-            } else {
-              element.innerText = Math.floor(count);
-              setTimeout(updateCounter, 10);
-            }
-          }
-
-          updateCounter();
-        });
-      });
-    </script>
-    <!-- Navbar -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const header = document.querySelector("header");
-        const toTop = document.querySelector("#to-top");
-
-        function checkHeaderPosition() {
-          const fixedNav = header.offsetTop;
-          const screenWidth = window.innerWidth;
-
-          if (screenWidth < 768) {
-            // Mobile: header selalu fixed, dan tampilkan toTop jika scroll > 100px
-            header.classList.add("navbar-fixed");
-            if (window.pageYOffset > 100) {
-              toTop.classList.remove("hidden");
-              toTop.classList.add("flex");
-            } else {
-              toTop.classList.remove("flex");
-              toTop.classList.add("hidden");
-            }
-          } else {
-            // Desktop: header dan toTop berubah berdasarkan posisi scroll
-            if (window.pageYOffset > fixedNav) {
-              header.classList.add("navbar-fixed");
-              toTop.classList.remove("hidden");
-              toTop.classList.add("flex");
-            } else {
-              header.classList.remove("navbar-fixed");
-              toTop.classList.remove("flex");
-              toTop.classList.add("hidden");
-            }
-          }
-        }
-
-        // Panggil fungsi saat halaman dimuat dan saat di-scroll
-        checkHeaderPosition();
-        window.onscroll = checkHeaderPosition;
-      });
-    </script>
-
-    <!-- filter -->
-    <script>
-      // JavaScript for Filter
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const projectCards = document.querySelectorAll(".project-card");
-
-      // Fungsi untuk menampilkan kartu berdasarkan filter yang dipilih
-      function filterProjects(selectedFilter) {
-        projectCards.forEach((card) => {
-          if (
-            selectedFilter === "all" ||
-            card.getAttribute("data-category") === selectedFilter
-          ) {
-            card.classList.remove("hidden");
-          } else {
-            card.classList.add("hidden");
-          }
-        });
-
-        // Update styling tombol aktif
-        filterButtons.forEach((btn) =>
-          btn.classList.remove(
-            "text-yellow-500",
-            "border-b-2",
-            "border-yellow-500",
-            "font-semibold"
-          )
-        );
-        const activeButton = document.querySelector(
-          `.filter-btn[data-filter="${selectedFilter}"]`
-        );
-        if (activeButton) {
-          activeButton.classList.add(
-            "text-yellow-500",
-            "border-b-2",
-            "border-yellow-500",
-            "font-semibold"
-          );
-        }
-      }
-
-      // Fungsi untuk menyimpan filter ke localStorage
-      function saveFilter(selectedFilter) {
-        localStorage.setItem("selectedFilter", selectedFilter);
-      }
-
-      // Event listener untuk setiap tombol filter
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const filter = button.getAttribute("data-filter");
-          filterProjects(filter);
-          saveFilter(filter);
-        });
-      });
-
-      // Saat halaman dimuat, ambil filter dari localStorage atau default ke "all"
-      document.addEventListener("DOMContentLoaded", () => {
-        const savedFilter = localStorage.getItem("selectedFilter") || "all";
-        filterProjects(savedFilter);
-      });
-    </script>
-
-    <!-- Active -->
-    <script>
-      // Active Nabbar
-      // Mendapatkan elemen #homeLink, #companyLink, #solutionLink, #projectLink, #featuresLink, #blogLink, dan #contactLink
-      var homeLink = document.getElementById("homeLink");
-      var companyLink = document.getElementById("companyLink");
-      var solutionLink = document.getElementById("solutionLink");
-      var projectLink = document.getElementById("projectLink");
-      var featuresLink = document.getElementById("featuresLink");
-      var blogLink = document.getElementById("blogLink");
-      var contactLink = document.getElementById("contactLink");
-
-      // Mendapatkan elemen #company, #solution, #project, #features, #blog, dan #contact
-      var companySection = document.getElementById("company");
-      var solutionSection = document.getElementById("solution");
-      var projectSection = document.getElementById("project");
-      var featuresSection = document.getElementById("features");
-      var blogSection = document.getElementById("blog");
-      var contactSection = document.getElementById("contact");
-
-      // Mengecek URL halaman saat ini
-      var currentPage = window.location.pathname;
-
-      // Mengecek status elemen aktif dari penyimpanan sesi
-      var activeElement = sessionStorage.getItem("activeElement");
-
-      // Jika halaman saat ini adalah index.html atau root, set homeLink sebagai aktif
-      if (currentPage === "/" || currentPage.endsWith("index.html")) {
-        setActiveElement("homeLink");
-      } else if (activeElement) {
-        document.getElementById(activeElement).classList.add("active");
-      }
-
-      // Menambahkan event listener untuk menangkap saat pengguna men-scroll
-      window.addEventListener("scroll", function () {
-        // Mendapatkan posisi (offset) dari masing-masing elemen
-        var companySectionOffset = companySection.offsetTop;
-        var solutionSectionOffset = solutionSection.offsetTop;
-        var projectSectionOffset = projectSection.offsetTop;
-        var featuresSectionOffset = featuresSection.offsetTop;
-        var blogSectionOffset = blogSection.offsetTop;
-        var contactSectionOffset = contactSection.offsetTop;
-
-        // Mendapatkan posisi (offset) dari titik tengah layar
-        var screenHeight = window.innerHeight / 2;
-
-        // Menentukan apakah pengguna men-scroll ke bawah elemen masing-masing
-        if (window.scrollY < companySectionOffset - screenHeight) {
-          setActiveElement("homeLink");
-        } else if (
-          window.scrollY > companySectionOffset - screenHeight &&
-          window.scrollY < solutionSectionOffset - screenHeight
-        ) {
-          setActiveElement("companyLink");
-        } else if (
-          window.scrollY > solutionSectionOffset - screenHeight &&
-          window.scrollY < projectSectionOffset - screenHeight
-        ) {
-          setActiveElement("solutionLink");
-        } else if (
-          window.scrollY > projectSectionOffset - screenHeight &&
-          window.scrollY < featuresSectionOffset - screenHeight
-        ) {
-          setActiveElement("projectLink");
-        } else if (
-          window.scrollY > featuresSectionOffset - screenHeight &&
-          window.scrollY < blogSectionOffset - screenHeight
-        ) {
-          setActiveElement("featuresLink");
-        } else if (
-          window.scrollY > blogSectionOffset - screenHeight &&
-          window.scrollY < contactSectionOffset - screenHeight
-        ) {
-          setActiveElement("blogLink");
-        } else if (window.scrollY > contactSectionOffset - screenHeight) {
-          setActiveElement("contactLink");
-        } else {
-          setActiveElement("homeLink");
-        }
-      });
-
-      // Fungsi untuk menandai elemen sebagai aktif dan menyimpan ke penyimpanan sesi
-      function setActiveElement(elementId) {
-        // Menghapus kelas "active" dari semua elemen navigasi
-        [
-          homeLink,
-          companyLink,
-          solutionLink,
-          projectLink,
-          featuresLink,
-          blogLink,
-          contactLink,
-        ].forEach(function (el) {
-          el.classList.remove("active");
-        });
-
-        // Menambahkan kelas "active" pada elemen yang aktif
-        document.getElementById(elementId).classList.add("active");
-
-        // Menyimpan informasi elemen yang aktif ke penyimpanan sesi
-        sessionStorage.setItem("activeElement", elementId);
-      }
-    </script>
-
-    <script src="dist/js/general/swiper-bundle.min.js"></script>
-    <script src="dist/js/general/swiper.js"></script>
-
+    <!-- Swiper Hero -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        effect: "fade",
-        grabCursor: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
+    <script src="/dist/js/hero/swiper.js"></script>
+    <!-- Swiper Hero -->
+
+    <!-- Counter -->
+    <script src="/dist/js/counter/angka.js"></script>
+    <!-- Counter -->
+
+    <!-- Swiper Service -->
+    <script src="/dist/js/service/swiper-bundle.min.js"></script>
+    <script src="/dist/js/service/swiper.js"></script>
+    <!-- Swiper Service -->
+
+    <!-- Testimoni JS-->
+    <script src="/dist/js/testimoni/testi.js"></script>
+    <!-- Testimoni JS -->
+
+    <!-- Project -->
+    <script src="/dist/js/project/filter.js"></script>
+    <!-- Project -->
   </body>
 </html>
