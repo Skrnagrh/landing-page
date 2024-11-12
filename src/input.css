@@ -101,6 +101,42 @@ body {
   @apply text-yellow-500 font-bold;
 }
 /* Header End */
+
+/* Footer Start */
+.footer-section {
+  @apply bg-gray-900 dark:bg-black text-white py-10;
+}
+
+.footer-container {
+  @apply container;
+}
+
+.footer-content {
+  @apply mx-auto lg:mx-10 flex flex-wrap justify-between px-4;
+}
+
+.footer-content1 {
+  @apply w-full md:w-1/3;
+}
+.footer-logo {
+  @apply flex items-center justify-start -mx-1 mb-4;
+}
+.footer-logo img {
+  @apply w-16 h-16 rounded-full mr-4;
+}
+.footer-logo h1 {
+  @apply text-lg font-semibold uppercase text-yellow-500;
+}
+.footer-logo p {
+  @apply text-black dark:text-white -mt-2 uppercase text-xs;
+}
+
+/* Footer End*/
+/* Back to top */
+.back-to-top {
+  @apply h-12 w-12 lg:h-14 lg:w-14 bg-yellow-400 justify-around items-center fixed z-10 bottom-4 right-4 rounded-full p-2 border-white border-2 shadow-xl hover:animate-pulse;
+}
+/* Back to top */
 /* General End */
 
 /* Hero Start */
@@ -404,3 +440,160 @@ body {
   @apply text-sm;
 }
 /* Project End */
+
+/* Working Start */
+.working-section {
+  @apply py-16 bg-gray-100 dark:bg-charcoal;
+}
+
+.working-container {
+  @apply container mx-auto text-center;
+}
+
+.working-text {
+  @apply text-center mb-10;
+}
+
+.working-text p {
+  @apply text-yellow-500 uppercase font-semibold;
+}
+
+.working-text h2 {
+  @apply text-3xl font-bold dark:text-white;
+}
+
+.working-content {
+  @apply flex flex-wrap justify-center gap-8;
+}
+
+.step-column {
+  @apply flex flex-col items-center;
+}
+
+.icon-container {
+  @apply bg-white dark:bg-onyx rounded-full p-6 shadow-lg dark:shadow-black relative;
+}
+
+.icon-container span {
+  @apply absolute -top-0 -right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center;
+}
+
+.icon-container i {
+  @apply text-3xl dark:text-yellow-500;
+}
+
+.step-column p {
+  @apply mt-4 font-medium dark:text-white;
+}
+.step-arrow {
+  @apply flex mt-8;
+}
+.step-arrow i {
+  @apply text-3xl text-secondary;
+}
+/* Working End*/
+
+/* Testimoni Start */
+.testi-section {
+  @apply py-16 bg-gray-900 dark:bg-black text-white;
+}
+
+.testi-container {
+  @apply container mx-auto text-center;
+}
+
+.testi-text {
+  @apply text-center mb-10;
+}
+
+.testi-text p {
+  @apply text-yellow-500 uppercase font-semibold;
+}
+
+.testi-text h2 {
+  @apply text-3xl font-bold dark:text-white;
+}
+
+.testi-content {
+  @apply max-w-xl mx-auto;
+}
+
+.testi-paragrph {
+  @apply text-gray-400 italic mb-6;
+}
+
+.testi-people {
+  @apply flex items-center justify-center;
+}
+
+.testi-people img {
+  @apply w-16 h-16 rounded-full mr-4;
+}
+
+.testi-name {
+  @apply font-semibold;
+}
+
+.testi-job {
+  @apply text-yellow-500;
+}
+
+.testi-button {
+  @apply flex justify-center space-x-4 mt-8;
+}
+
+.testi-button button {
+  @apply bg-gray-800 hover:bg-yellow-500 text-white p-2 rounded-full;
+}
+/* Testimoni End */
+
+/* Blog Start */
+.blog-section {
+  @apply py-16 bg-gray-100 pb-20 lg:pb-32 dark:bg-dark;
+}
+
+.blog-container {
+  @apply container mx-auto text-center;
+}
+
+.blog-text {
+  @apply text-center mb-10;
+}
+
+.blog-text p {
+  @apply text-yellow-500 uppercase font-semibold;
+}
+
+.blog-text h2 {
+  @apply text-3xl font-bold dark:text-white;
+}
+
+.blog-content {
+  @apply flex flex-wrap justify-center gap-8;
+}
+
+.blog-card {
+  @apply bg-white dark:bg-black shadow-md rounded-xl overflow-hidden w-80 border-b-4 border-yellow-500 p-4;
+}
+
+.blog-card img {
+  @apply w-full h-48 object-cover mb-4 rounded-t-lg;
+}
+
+.blog-icon {
+  @apply text-gray-500 flex items-center space-x-2 mb-2;
+}
+
+.blog-icon i {
+  @apply text-yellow-500 text-xl;
+}
+
+.blog-icon span {
+  @apply text-sm;
+}
+
+.blog-card h3 {
+  @apply font-semibold text-lg mb-2 text-black dark:text-white;
+}
+
+/* Blog End */

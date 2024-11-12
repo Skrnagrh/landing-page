@@ -26,10 +26,25 @@
     <header class="header">
       <div class="container">
         <div class="navbar-container">
-          <div class="px-4">
+          <!-- <div class="px-4">
             <a href="#home" class="navbar-brand"
               ><img src="dist/img/logo/1.png" alt="" class="max-w-44 lg:w-64" />
             </a>
+          </div> -->
+          <div class="flex items-center justify-start -mx-1">
+            <img
+              src="dist/img/logo/2.png"
+              alt="logo"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div class="-mx-3">
+              <h1 class="text-lg font-semibold uppercase text-yellow-500">
+                MiningFix
+              </h1>
+              <p class="text-black dark:text-white uppercase text-xs -mt-2">
+                Indonesia
+              </p>
+            </div>
           </div>
 
           <div class="flex items-center px-4">
@@ -587,218 +602,173 @@
     </section>
     <!-- Project End -->
 
-    <!-- Working Process Section -->
-    <section class="py-16 bg-gray-100 dark:bg-charcoal" id="features">
-      <div class="container mx-auto text-center">
-        <div class="text-center mb-10">
-          <p class="text-yellow-500 uppercase font-semibold">Easy Steps</p>
-          <h2 class="text-3xl font-bold dark:text-white">Working Process</h2>
+    <!-- Working Start -->
+    <section class="working-section" id="features">
+      <div class="working-container">
+        <div class="working-text">
+          <p>Easy Steps</p>
+          <h2>Working Process</h2>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-8">
-          <div class="flex flex-col items-center">
-            <div
-              class="bg-white dark:bg-onyx rounded-full p-6 shadow-lg dark:shadow-black relative"
-            >
-              <span
-                class="absolute -top-0 -right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                >1</span
-              >
-              <i class="bi bi-pencil text-3xl dark:text-yellow-500"></i>
+        <div class="working-content">
+          <div class="step-column">
+            <div class="icon-container">
+              <span>1</span>
+              <i class="bi bi-pencil"></i>
             </div>
-            <p class="mt-4 font-medium dark:text-white">Design</p>
+            <p>Design</p>
           </div>
 
-          <div class="flex mt-8">
-            <i class="bi bi-arrow-right text-3xl text-secondary"></i>
+          <div class="step-arrow">
+            <i class="bi bi-arrow-right"></i>
           </div>
 
-          <div class="flex flex-col items-center">
-            <div class="bg-white rounded-full p-6 shadow-lg relative">
-              <span
-                class="absolute -top-0 -right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                >2</span
-              >
-              <i class="bi bi-rulers text-3xl"></i>
+          <div class="step-column">
+            <div class="icon-container">
+              <span>2</span>
+              <i class="bi bi-rulers"></i>
             </div>
-            <p class="mt-4 font-medium">Preliminary</p>
+            <p>Preliminary</p>
           </div>
 
-          <div class="flex mt-8">
-            <i
-              class="bi bi-arrow-right text-3xl text-secondary hidden md:flex"
-            ></i>
+          <div class="step-arrow">
+            <i class="bi bi-arrow-right hidden md:flex"></i>
           </div>
 
-          <div class="flex flex-col items-center">
-            <div class="bg-white rounded-full p-6 shadow-lg relative">
-              <span
-                class="absolute -top-0 -right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                >3</span
-              >
-              <i class="bi bi-rulers text-3xl"></i>
+          <div class="step-column">
+            <div class="icon-container">
+              <span>3</span>
+              <i class="bi bi-rulers"></i>
             </div>
-            <p class="mt-4 font-medium">Drawings</p>
+            <p>Drawings</p>
           </div>
 
-          <div class="flex mt-8">
-            <i class="bi bi-arrow-right text-3xl text-secondary"></i>
+          <div class="step-arrow">
+            <i class="bi bi-arrow-right"></i>
           </div>
 
-          <div class="flex flex-col items-center">
-            <div class="bg-white rounded-full p-6 shadow-lg relative">
-              <span
-                class="absolute -top-0 -right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                >4</span
-              >
-              <i class="bi bi-tools text-3xl"></i>
+          <div class="step-column">
+            <div class="icon-container">
+              <span>4</span>
+              <i class="bi bi-tools"></i>
             </div>
-            <p class="mt-4 font-medium">Construction</p>
+            <p>Construction</p>
           </div>
         </div>
       </div>
     </section>
+    <!-- Working End -->
 
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-gray-900 dark:bg-black text-white">
-      <div class="container mx-auto text-center">
-        <div class="text-center mb-10">
-          <p class="text-yellow-500 uppercase font-semibold">Client's Love</p>
-          <h2 class="text-3xl font-bold dark:text-white">Testimoni Klien</h2>
+    <!-- Testimonials Start -->
+    <section class="testi-section">
+      <div class="testi-container">
+        <div class="testi-text">
+          <p>Client's Love</p>
+          <h2>Testimoni Klien</h2>
         </div>
         <!-- Single Testimonial Container -->
-        <div id="testimonial" class="max-w-xl mx-auto">
-          <p id="testimonial-text" class="text-gray-400 italic mb-6">
+        <div id="testimonial" class="testi-content">
+          <p id="testimonial-text" class="testi-paragrph">
             "MiningFix Solution telah membantu kami dalam pengembangan tambang
             dengan pendekatan yang ramah lingkungan dan efisien, sangat
             merekomendasikan."
           </p>
-          <div class="flex items-center justify-center">
+          <div class="testi-people">
             <img
               id="testimonial-image"
               src="dist/img/test.jpg"
               alt="Client Image"
-              class="w-16 h-16 rounded-full mr-4"
             />
             <div>
-              <p id="testimonial-name" class="font-semibold">Jonas Blue</p>
-              <p id="testimonial-role" class="text-yellow-500">CEO Media</p>
+              <p id="testimonial-name" class="testi-name">Jonas Blue</p>
+              <p id="testimonial-role" class="testi-job">CEO Media</p>
             </div>
           </div>
         </div>
 
         <!-- Navigation Arrows -->
-        <div class="flex justify-center space-x-4 mt-8">
-          <button
-            onclick="showPrev()"
-            class="bg-gray-800 hover:bg-yellow-500 text-white p-2 rounded-full"
-          >
+        <div class="testi-button">
+          <button onclick="showPrev()">
             <i class="bi bi-chevron-left"></i>
           </button>
-          <button
-            onclick="showNext()"
-            class="bg-gray-800 hover:bg-yellow-500 text-white p-2 rounded-full"
-          >
+          <button onclick="showNext()">
             <i class="bi bi-chevron-right"></i>
           </button>
         </div>
       </div>
     </section>
+    <!-- Testimonials End -->
 
-    <!-- Latest Media Section -->
-    <section class="py-16 bg-gray-100 pb-20 lg:pb-32 dark:bg-dark" id="blog">
-      <div class="container mx-auto text-center">
-        <div class="text-center mb-10">
-          <p class="text-yellow-500 uppercase font-semibold">Latest News</p>
-          <h2 class="text-3xl font-bold dark:text-white">Latest Media</h2>
+    <!-- Blog Start -->
+    <section class="blog-section" id="blog">
+      <div class="blog-container">
+        <div class="blog-text">
+          <p>Latest News</p>
+          <h2>Latest Media</h2>
         </div>
 
         <!-- Media Cards -->
-        <div class="flex flex-wrap justify-center gap-8">
+        <div class="blog-content">
           <!-- Card 1 -->
-          <div
-            class="bg-white dark:bg-black shadow-md rounded-xl overflow-hidden w-80 border-b-4 border-yellow-500"
-          >
-            <div class="p-4">
-              <img
-                src="dist/img/blog/1.jpg"
-                alt="Media Image 1"
-                class="w-full h-48 object-cover mb-4 rounded-t-lg"
-              />
-              <div class="text-gray-500 flex items-center space-x-2 mb-2">
-                <i class="bi bi-building text-yellow-500 text-xl"></i>
-                <span class="text-sm">Building</span>
-                <span>|</span>
-                <i class="bi bi-clock text-yellow-500 text-xl"></i>
-                <span class="text-sm">21-03-2019</span>
-              </div>
-              <h3 class="font-semibold text-lg mb-2 text-black dark:text-white">
-                Riding with friend is the best feeling
-              </h3>
+          <div class="blog-card">
+            <img src="dist/img/blog/1.jpg" alt="Media Image 1" />
+            <div class="blog-icon">
+              <i class="bi bi-building"></i>
+              <span>Building</span>
+              <span>|</span>
+              <i class="bi bi-clock"></i>
+              <span>21-03-2019</span>
             </div>
+            <h3>Riding with friend is the best feeling</h3>
           </div>
 
           <!-- Card 2 -->
-          <div
-            class="bg-white shadow-md rounded-lg overflow-hidden w-80 border-b-4 border-yellow-500"
-          >
-            <div class="p-4">
-              <!-- Icon and Date Row -->
-              <img
-                src="dist/img/blog/2.jpg"
-                alt="Media Image 2"
-                class="w-full h-48 object-cover mb-4"
-              />
-              <div class="text-gray-500 flex items-center space-x-2 mb-2">
-                <i class="bi bi-house text-yellow-500 text-xl"></i>
-                <span class="text-sm">House</span>
-                <span>|</span>
-                <i class="bi bi-clock text-yellow-500 text-xl"></i>
-                <span class="text-sm">21/03/2019</span>
-              </div>
-              <h3 class="font-semibold text-lg mb-2">
-                BMW vs Austin Martin going higher
-              </h3>
+          <div class="blog-card">
+            <img src="dist/img/blog/2.jpg" alt="Media Image 2" />
+            <div class="blog-icon">
+              <i class="bi bi-house"></i>
+              <span>House</span>
+              <span>|</span>
+              <i class="bi bi-clock"></i>
+              <span>21/03/2019</span>
             </div>
+            <h3>BMW vs Austin Martin going higher</h3>
           </div>
 
           <!-- Card 3 -->
-          <div
-            class="bg-white shadow-md rounded-lg overflow-hidden w-80 border-b-4 border-yellow-500"
-          >
-            <div class="p-4">
-              <!-- Icon and Date Row -->
-              <img
-                src="dist/img/blog/3.jpg"
-                alt="Media Image 3"
-                class="w-full h-48 object-cover mb-4"
-              />
-              <div class="text-gray-500 flex items-center space-x-2 mb-2">
-                <i class="bi bi-house text-yellow-500 text-xl"></i>
-                <span class="text-sm">House</span>
-                <span>|</span>
-                <i class="bi bi-clock text-yellow-500 text-xl"></i>
-                <span class="text-sm">24/03/2018</span>
-              </div>
-              <h3 class="font-semibold text-lg mb-2">
-                Caring for construction more solution
-              </h3>
+          <div class="blog-card">
+            <img src="dist/img/blog/3.jpg" alt="Media Image 3" />
+            <div class="blog-icon">
+              <i class="bi bi-house"></i>
+              <span>House</span>
+              <span>|</span>
+              <i class="bi bi-clock"></i>
+              <span>24/03/2018</span>
             </div>
+            <h3>Caring for construction more solution</h3>
           </div>
         </div>
       </div>
     </section>
+    <!-- Blog End -->
 
-    <footer class="bg-gray-900 dark:bg-black text-white py-10" id="contact">
-      <div class="container">
-        <div class="mx-auto lg:mx-10 flex flex-wrap justify-between px-4">
+    <!-- Footer Start -->
+    <footer class="footer-section" id="contact">
+      <div class="footer-container">
+        <div
+          class="footer-logo mx-auto lg:mx-10 flex flex-wrap justify-between px-4"
+        >
+          <img src="dist/img/logo/2.png" alt="logo" />
+          <div class="-mx-3">
+            <h1>MiningFix</h1>
+            <p>Indonesia</p>
+          </div>
+        </div>
+
+        <div class="footer-content">
           <!-- Left Section -->
-          <div class="w-full md:w-1/3 mb-6 md:mb-0">
-            <!-- <h2 class="text-lg font-semibold mb-4">BUILD BENCH</h2> -->
-            <h2 class="text-lg font-semibold mb-4">
-              <img src="dist/img/logo/1.png" alt="" class="max-w-44 lg:w-64" />
-            </h2>
-            <p class="mb-2">Head Office</p>
+          <div class="footer-content1 mb-6 md:mb-0">
+            <p class="text-lg font-semibold">Head Office</p>
             <p>Serang, Banten, Indonesia</p>
             <p>
               Tel:
@@ -817,8 +787,8 @@
           </div>
 
           <!-- Middle Section -->
-          <div class="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 class="text-lg font-semibold mb-4">About Company</h2>
+          <div class="footer-content1 mb-6 md:mb-0">
+            <p class="text-lg font-semibold">About Company</p>
             <div class="grid grid-cols-2 gap-4">
               <ul class="space-y-2">
                 <li>
@@ -878,20 +848,22 @@
           </div>
 
           <!-- Right Section -->
-          <div class="w-full md:w-1/3">
-            <div class="bg-yellow-500 p-6 rounded-lg lg:-mt-20">
+          <div class="footer-content1">
+            <div
+              class="bg-yellow-500 p-6 lg:pb-10 rounded-xl lg:-mt-40 border-b-4 dark:border-secondary"
+            >
               <h2 class="text-black text-lg font-semibold mb-4">
                 Subscribe for latest newsletter
               </h2>
               <form action="#" method="POST" class="mx-auto max-w-xl">
-                <div class="mt-2.5">
+                <div class="my-4">
                   <input
                     type="text"
                     placeholder="Name"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-                <div class="my-2.5">
+                <div class="my-4">
                   <input
                     type="email"
                     placeholder="Email"
@@ -914,53 +886,28 @@
           </div>
         </div>
 
-        <!-- <div class="border-t border-gray-700 mt-8 pt-6 lg:mx-10">
-          <div class="container mx-auto flex justify-between items-center px-4">
-            <p class="text-gray-500">
-              Copyright ©
-              <span id="current-year" class="font-medium text-white"></span>
-              <span class="font-medium text-yellow-500">MiningFix Solution</span
-              >. All Rights Reserved.
-            </p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="bi bi-twitter"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="bi bi-google"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
-          </div>
-        </div> -->
-
         <div class="border-t border-gray-700 mt-8 pt-6 lg:mx-10">
           <div
             class="container mx-auto flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:space-y-0 px-4"
           >
             <div class="flex space-x-4 order-1 lg:order-none">
               <span>Follow Us:</span>
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
                 ><i class="bi bi-facebook"></i
               ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
                 ><i class="bi bi-twitter"></i
               ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
                 ><i class="bi bi-instagram"></i
               ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
                 ><i class="bi bi-linkedin"></i
               ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
                 ><i class="bi bi-youtube"></i
               ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
                 ><i class="bi bi-tiktok"></i
               ></a>
             </div>
@@ -975,13 +922,10 @@
         </div>
       </div>
     </footer>
+    <!-- Footer End -->
 
     <!-- Back To Top Start -->
-    <a
-      href="#home"
-      class="back-to-top h-12 w-12 lg:h-14 lg:w-14 bg-yellow-400 justify-around items-center fixed z-10 bottom-4 right-4 rounded-full p-2 border-white border-2 shadow-xl hover:animate-pulse hidden"
-      id="to-top"
-    >
+    <a href="#home" class="back-to-top hidden" id="to-top">
       <i class="bi bi-arrow-up font-bold text-white text-lg"></i>
     </a>
     <!-- Back To Top End -->
