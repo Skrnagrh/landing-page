@@ -5,9 +5,11 @@ Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah
 ## Pratinjau
 
 ### Homepage
-![Tampilan Homepage](https://github.com/Skrnagrh/landing-page/raw/main/assets/img/homepage.png)
+
+![Tampilan Homepage](./dist/img/1.jpeg)
 
 ### Responsif
+
 Tampilan landing page yang disesuaikan untuk desktop, tablet, dan mobile.
 
 ---
@@ -29,32 +31,27 @@ Landing page ini memiliki beberapa bagian utama:
 - **HTML**: Digunakan untuk struktur halaman.
 - **JavaScript**: (Opsional) Digunakan untuk fungsi interaktif, seperti menu hamburger untuk tampilan mobile.
 
-## Pratinjau
-
-- **Homepage**: Tampilan utama dengan elemen-elemen hero, fitur, tentang kami, dan kontak.
-- **Responsif**: Tampilan yang disesuaikan untuk desktop, tablet, dan mobile.
-
 ## Cara Menggunakan
 
 1. Clone repositori ini ke komputer Anda:
 
-    ```bash
-    git clone https://github.com/Skrnagrh/landing-page.git
-    ```
+   ```bash
+   git clone https://github.com/Skrnagrh/landing-page.git
+   ```
 
 2. Masuk ke direktori proyek:
 
-    ```bash
-    cd landing-page
-    ```
+   ```bash
+   cd landing-page
+   ```
 
 3. **Instal Tailwind CSS** (jika belum terinstal):
 
-    Ikuti panduan instalasi di [Tailwind CSS](https://tailwindcss.com/docs/installation) untuk menambahkan Tailwind ke proyek ini, atau Anda dapat menggunakan CDN untuk kemudahan.
+   Ikuti panduan instalasi di [Tailwind CSS](https://tailwindcss.com/docs/installation) untuk menambahkan Tailwind ke proyek ini, atau Anda dapat menggunakan CDN untuk kemudahan.
 
 4. **Jalankan Project**:
 
-    Buka file `index.html` di browser Anda untuk melihat tampilan landing page.
+   Buka file `index.html` di browser Anda untuk melihat tampilan landing page.
 
 ## Struktur Proyek
 
@@ -62,11 +59,12 @@ Landing page ini memiliki beberapa bagian utama:
 landing-page/
 ├── index.html            # Halaman utama
 ├── src/
-│   └── input.css        # Custom styling menggunakan Tailwind CSS
-└── assets/
+│   └── input.css         # Custom styling menggunakan Tailwind CSS
+└── dist/
     ├── img/              # Folder untuk gambar
-    └── js/
-        └── script.js     # (Opsional) JavaScript untuk interaktivitas
+    ├── js/               # (Opsional) JavaScript
+    ├── css/              # (Opsional) Css
+    └── vendor/           # (Opsional) Vendor
 ```
 
 ## Kustomisasi
@@ -77,5 +75,3 @@ landing-page/
 ## Kontribusi
 
 Kontribusi sangat disambut. Anda dapat membuat pull request atau melaporkan masalah di bagian "Issues".
-
----
