@@ -14,6 +14,8 @@ Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah
 | :---------------------------------------------------------: |
 |                        Tampilan Full                        |
 
+=======
+
 ### Responsif
 
 Tampilan landing page yang disesuaikan untuk desktop, tablet, dan mobile.
