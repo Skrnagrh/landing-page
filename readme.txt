@@ -1,3 +1,5 @@
+---
+
 # Landing Page Company Profile
 
 Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah implementasi landing page untuk profil perusahaan yang dibangun menggunakan framework **Tailwind CSS**. Landing page ini dirancang untuk menampilkan informasi perusahaan secara ringkas dan profesional, serta menyediakan navigasi yang mudah diakses oleh pengunjung.
@@ -5,7 +7,7 @@ Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah
 ## Pratinjau
 
 ### Homepage
-![Tampilan Homepage](https://github.com/Skrnagrh/landing-page/raw/main/assets/img/homepage.png)
+![Tampilan Homepage](./dist/img/homepage.png)
 
 ### Responsif
 Tampilan landing page yang disesuaikan untuk desktop, tablet, dan mobile.
@@ -28,11 +30,6 @@ Landing page ini memiliki beberapa bagian utama:
 - **Tailwind CSS**: Digunakan untuk mendesain layout yang responsif dan styling yang efisien.
 - **HTML**: Digunakan untuk struktur halaman.
 - **JavaScript**: (Opsional) Digunakan untuk fungsi interaktif, seperti menu hamburger untuk tampilan mobile.
-
-## Pratinjau
-
-- **Homepage**: Tampilan utama dengan elemen-elemen hero, fitur, tentang kami, dan kontak.
-- **Responsif**: Tampilan yang disesuaikan untuk desktop, tablet, dan mobile.
 
 ## Cara Menggunakan
 
@@ -62,7 +59,7 @@ Landing page ini memiliki beberapa bagian utama:
 landing-page/
 ├── index.html            # Halaman utama
 ├── src/
-│   └── input.css        # Custom styling menggunakan Tailwind CSS
+│   └── input.css         # Custom styling menggunakan Tailwind CSS
 └── assets/
     ├── img/              # Folder untuk gambar
     └── js/
