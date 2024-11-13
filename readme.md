@@ -77,7 +77,7 @@ landing-page/
 
 ## Kustomisasi
 
-- **Warna & Gaya**: Anda dapat mengubah warna atau gaya dengan mengedit class Tailwind di `index.html` atau dengan mengubah konfigurasi di `styles.css`.
+- **Warna & Gaya**: Anda dapat mengubah warna atau gaya dengan mengedit class Tailwind di `index.html` atau dengan mengubah konfigurasi di `src/input.css`.
 - **Konten**: Sesuaikan konten sesuai dengan kebutuhan profil perusahaan Anda.
 
 ## Kontribusi
