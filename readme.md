@@ -1,5 +1,3 @@
----
-
 # Landing Page Company Profile
 
 Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah implementasi landing page untuk profil perusahaan yang dibangun menggunakan framework **Tailwind CSS**. Landing page ini dirancang untuk menampilkan informasi perusahaan secara ringkas dan profesional, serta menyediakan navigasi yang mudah diakses oleh pengunjung.
@@ -7,12 +5,14 @@ Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah
 ## Pratinjau
 
 ### Homepage
-<<<<<<< HEAD:readme.md
 
-![Tampilan Homepage](./dist/img/1.jpeg)
-=======
-![Tampilan Homepage](./dist/img/homepage.png)
->>>>>>> 652c0bf0aef6f7fc73ba964b300ec38aff6987e5:readme.txt
+| <img src="/dist/img/tampilan/1.png" alt="Desktop" width="100%"> | <img src="/dist/img/tampilan/2.png" alt="Pad" width="100%"> | <img src="/dist/img/tampilan/3.png" alt="Mobile" width="100%"> |
+| :-------------------------------------------------------------: | :---------------------------------------------------------: | :------------------------------------------------------------: |
+|                        Tampilan Desktop                         |                        Tampilan Pad                         |                        Tampilan Mobile                         |
+
+| <img src="/dist/img/tampilan/4.png" alt="Full" width="50%"> |
+| :---------------------------------------------------------: |
+|                        Tampilan Full                        |
 
 ### Responsif
 
@@ -66,11 +66,7 @@ landing-page/
 ├── index.html            # Halaman utama
 ├── src/
 │   └── input.css         # Custom styling menggunakan Tailwind CSS
-<<<<<<< HEAD:readme.md
 └── dist/
-=======
-└── assets/
->>>>>>> 652c0bf0aef6f7fc73ba964b300ec38aff6987e5:readme.txt
     ├── img/              # Folder untuk gambar
     ├── js/               # (Opsional) JavaScript
     ├── css/              # (Opsional) Css
