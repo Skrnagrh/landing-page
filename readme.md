@@ -7,12 +7,11 @@ Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah
 ## Pratinjau
 
 ### Homepage
-<<<<<<< HEAD:readme.md
+<img src="./dist/img/1.jpeg" alt="Tampilan Homepage" width="100%">
 
 ![Tampilan Homepage](./dist/img/1.jpeg)
 =======
 ![Tampilan Homepage](./dist/img/homepage.png)
->>>>>>> 652c0bf0aef6f7fc73ba964b300ec38aff6987e5:readme.txt
 
 ### Responsif
 
