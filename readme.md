@@ -10,11 +10,9 @@ Selamat datang di repositori **Landing Page Company Profile**! Proyek ini adalah
 | :-------------------------------------------------------------: | :---------------------------------------------------------: | :------------------------------------------------------------: |
 |                        Tampilan Desktop                         |                        Tampilan Pad                         |                        Tampilan Mobile                         |
 
-| <img src="/dist/img/tampilan/4.png" alt="Full" width="50%"> |
-| :---------------------------------------------------------: |
-|                        Tampilan Full                        |
-
-=======
+| <img src="/dist/img/tampilan/4.png" alt="Full" width="100%"> | <img src="/dist/img/tampilan/5.png" alt="Full" width="100%"> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                   Tampilan Full Light Mode                   |                   Tampilan Full Dark Mode                    |
 
 ### Responsif
 
